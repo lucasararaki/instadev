@@ -1,0 +1,121 @@
+{
+	"info": {
+		"name": "Semana Omnistack",
+		"_postman_id": "703df496-f77d-4f25-879b-bdc04e109eaf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "author",
+									"value": "Lucas Araraki",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "place",
+									"value": "Itapecerica da Serra",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Uma prática com a RocketSeat",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hashtags",
+									"value": "#omnistack #rocketseat #reactjs #nodejs",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"posts"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "List all Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:3333/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"posts"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Likes",
+			"description": "",
+			"item": [
+				{
+					"name": "Like on Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:3333/posts/5d00783d20edc47f6be8956e/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"posts",
+								"5d00783d20edc47f6be8956e",
+								"like"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
